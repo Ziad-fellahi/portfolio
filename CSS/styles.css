@@ -1,0 +1,276 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Conteneur principal */
+.page-container {
+    display: flex;
+    flex-direction: column; /* Disposition verticale pour éviter les espaces horizontaux */
+    padding-top: 150px; /* Compensation pour la barre de navigation fixe */
+}
+
+
+
+
+
+
+/* Style de la NavBarre */
+
+
+.header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #535353;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(54, 54, 54, 0.7); /* Ombre */
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 2px solid #2C2C2C; /* Contour */
+    z-index: 1000; /* Empêche la barre de navigation de se superposer à d'autres éléments */
+}
+
+
+/* savoir dans quelle page nous nous trouvons  */
+.nav-links a.active {
+    color: #ffffff; /* Couleur du texte actif */
+    border: 2px solid #ffffff; /* Bordure blanche autour du lien actif */
+    padding: 5px; /* Espace autour du texte pour que la bordure ne soit pas trop proche */
+    border-radius: 5px; /* Rendre les bords de la bordure arrondis */
+}
+
+
+
+
+.photo-nom {
+    display: flex;
+    align-items: center;
+}
+
+.text-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 40px;
+}
+
+.photo-nom-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #7E7E7E;
+    margin-left: 30px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;          /* Espace de 20px entre chaque élément de la liste */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    font-size: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+/* Section principale */
+.home-container {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center; /* Centre le contenu */
+    align-items: center; /* Centre le contenu verticalement */
+    background-color: rgb(221, 221, 221);
+    border: 5px solid rgb(97, 97, 97);
+
+}
+
+.landing1 {
+    text-align: center;
+}
+
+.big-title {
+    font-size: 100px;
+    color: #333;
+    font-weight: 700;
+}
+
+.sous-titre {
+    font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Section contact */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 50px;
+    display: flex;
+    justify-content: center;  /* Centrer horizontalement */
+    align-items: center;      /* Centrer verticalement */
+}
+
+.contact-info {
+    width: 800px;
+    margin left: 300px;
+    margin: 50px;
+    border: 8px solid rgb(97, 97, 97);
+    background-color: #dfdfdf
+}
+
+.contact-infotxt{
+    text-align: center;
+    margin : 30px;
+}
+
+.contact-info h1 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    font-size: 18px;
+    color: #444;
+}
+
+.contact-info ul li {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contact-info ul li strong {
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+/* PAGE 2  *//* PAGE 2  *//* PAGE 2  *//* PAGE 2  *//* PAGE 2  *//* PAGE 2  *//* PAGE 2  *//* PAGE 2  *//* PAGE 2  *//* PAGE 2  *//* PAGE 2  *//* PAGE 2  */
+
+.cv-container {
+    text-align: center;
+  }
+  
+  .cv-img {
+    max-width: 45%;
+    height: 100%;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .sous-titre{
+text-align: center;
+    margin: 80px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE 4  *//* PAGE 4  *//* PAGE 4  *//* PAGE 4  *//* PAGE 4  *//* PAGE 4  *//* PAGE 4  *//* PAGE 4  *//* PAGE 4  *//* PAGE 4  */
+/* Style du formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
