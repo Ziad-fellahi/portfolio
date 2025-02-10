@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Mon Portfolio</title>
+</head>
+<body>
+    <div class="page-container">
+
+        <!-- Contenu principal -->
+        <div class="main-content">
+            <!-- Barre de navigation -->
+            <header class="header">
+                <div class="photo-nom">
+                    <img src="images/photo-de-moi.jpg" alt="Photo de Ziad" class="photo-nom-img">
+                    <h1 class="text-logo">Ziad FELLAHI</h1>
+                </div>
+    
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="page2.html">Curriculum Vitae</a></li>
+                        <li><a href="page3.html">Compétences</a></li>
+                        <li><a href="page4.html"class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+
+
+            <!-- Section principale -->
+            <section id="contact" class="contact-section">
+                <form action="https://formspree.io/f/maykqoqd" method="POST">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+
+
+            <section id="contact" class="contact-section">
+                <div class="contact-info">
+                    <div class="contact-infotxt">
+                    <h1>Où me contacter :</h1>
+                    <ul>
+                        <li><strong>Email :</strong> ziad.fellahi@outlook.fr</li>
+                        <li><strong>Téléphone :</strong> 06 51 81 80 95</li>
+                        <li><strong>Adresse :</strong> 11 rue Legendre, Aulnay-sous-Bois 93600</li>
+                    </ul>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </div>
+
+ 
+</body>
+</html>
